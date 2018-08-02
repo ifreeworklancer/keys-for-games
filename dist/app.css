@@ -9828,6 +9828,7 @@ section {
   max-width: 140px;
   font-size: 18px;
   color: #fff;
+  background: url("../images/icon/logo.png") 0 0/100% no-repeat;
   z-index: 11;
 }
 
