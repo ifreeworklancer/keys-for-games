@@ -1,0 +1,95 @@
+.reviews-video {
+    position: static;
+    width: 100%;
+    padding-bottom: 56%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-bottom: 0;
+    }
+
+    svg {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    &-title {
+        position: relative;
+        padding-left: 15px;
+        padding-top: 15px;
+        font-family: 'PT Sans', serif;
+        font-size: 16px;
+        z-index: 5;
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+            padding-top: 150px;
+            padding-left: 140px;
+            font-size: 24px;
+        }
+    }
+}
+
+
+.reviews-list {
+    padding: 70px 95px;
+    padding-right: 180px;
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+
+     @media (max-width: map_get($grid-breakpoints, md)) {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px 15px;
+        border: none;
+     }
+
+    .section-title-desc {
+        margin-top: 15px;
+        width: 320px;
+    }
+    
+     .btn {
+        padding: 15px 70px;
+        background-color: #fff;
+    }
+    
+}
+.info-list-item {
+    padding: 20px 0 10px;
+    width: 100%;
+    max-width: 320px;
+    
+    &--info {
+        max-width: 320px;
+    }
+
+    &--name {
+        font-family: 'PT Sans', serif;
+        font-size: 20px;
+    }
+}
+.info-social {
+
+    svg {
+        stroke: $dark;
+        margin-top: -5px;
+        margin-right: 5px;
+        opacity: .6;
+        transition: linear .3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

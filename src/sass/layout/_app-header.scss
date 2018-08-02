@@ -1,0 +1,9 @@
+#app-header {
+    padding: 40px 0;
+    z-index: 10;
+    background-image: linear-gradient( 132deg, rgb(12,12,12) 6%, rgb(10,10,10) 78%, rgb(8,8,8) 99%);
+    
+    .container-fluid {
+        max-width: 1400px;
+    }
+}

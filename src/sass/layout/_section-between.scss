@@ -1,0 +1,22 @@
+#between {
+    position: relative;
+    top: -100px;
+    min-height: 550px;
+    background: url('../images/bg/between-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    z-index: -5;
+
+    .between-images {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: -75px;
+        width: 100%;
+        max-width: 755px; 
+
+        
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+}

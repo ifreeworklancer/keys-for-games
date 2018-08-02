@@ -1,0 +1,104 @@
+#catalog {
+
+    .btn-mobile {
+        display: none;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            position: relative;
+            display: inline-block;
+        }
+    }
+}
+
+.catalog-form-search {
+
+    .input__field--makiko {
+        border: 1px solid $dark;
+        color: $dark;
+    }
+
+    .input__label--makiko::before {
+        top: 52%;
+        left: 20px;
+        background: url(../images/icon/search-light.svg) no-repeat center center /100%;
+    }
+
+    .input__label-content--makiko {
+        line-height: .35;
+        color: $dark;
+    }
+}
+
+.catalog-item {
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-top: 240px;
+    overflow: hidden;
+    
+    &.big-item {
+        padding-top: 575px;
+
+        .big-img {
+            background: url('../images/content/catalog/farcry-5.jpg') 50% 50% /cover no-repeat;
+            height: 575px;
+        }
+    }
+    
+    &-img {
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 240px;
+        background: url('../images/content/catalog/warcraft.jpg') 50% 50% /cover no-repeat;
+        transition: height linear .3s;
+    }
+
+    &-info {
+        border-top: 1px solid #fff;
+        z-index: 5;
+        transition: linear .3s;
+
+        .old-value {
+            font-family: 'Oswald', sans-serif;
+            opacity: .6;
+        }
+        
+        .game-name {
+            margin-top: 5px;
+            color: #191919;
+            font-size: 24px;
+            transition: .3s;
+            line-height: 1;
+
+            .value {
+                margin-top: -3px;
+                font-family: 'Oswald', sans-serif;
+                transition: .3s;
+            }
+        }
+    }
+
+    &:hover {
+
+        .catalog-item-img {
+            height: 100%;
+        }
+
+        .catalog-item-info {
+
+            .genre {
+                color: #fff !important;
+                .old-value {
+                    opacity: 0;
+                }
+            }
+            
+            .game-name {
+                color: #fff !important; 
+                .value {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

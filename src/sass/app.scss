@@ -1,0 +1,31 @@
+@import "config/variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+
+
+@import "base/body";
+@import "base/section";
+@import "base/btn";
+
+
+@import "modules/logo";
+@import "modules/burger-menu";
+@import "modules/title";
+@import "modules/form-search";
+@import "modules/more-info";
+@import "modules/slider";
+
+
+@import "layout/app-header";
+@import "layout/header-banner";
+@import "layout/section-header-slider";
+@import "layout/section-catalog";
+@import "layout/section-between";
+@import "layout/section-events";
+@import "layout/section-reviews";
+@import "layout/section-news";
+@import "layout/app-footer";
+

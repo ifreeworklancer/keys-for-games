@@ -1,0 +1,9 @@
+.section-title {
+    @extend .text-uppercase;
+    margin: 0 0 50px;
+    line-height: 1;
+    
+    @media (max-width: 576px) {
+        margin-bottom: 25px;
+    }
+}

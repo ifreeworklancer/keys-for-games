@@ -1,0 +1,27 @@
+.btn-outline-danger {
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    z-index: 9;
+    transition: linear .3s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 95%;
+        top: 0;
+        bottom: 0;
+        background-color: $danger;
+        transition: right linear .3s;
+        z-index: -2;
+    }
+
+    &:hover {
+        &::before {
+            right: 0;
+        }
+    }
+}

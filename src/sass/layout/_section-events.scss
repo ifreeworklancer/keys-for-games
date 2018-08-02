@@ -1,0 +1,84 @@
+#events {
+    padding-bottom: 100px;
+
+    .events-bg {
+        margin-top: -320px;   
+
+        
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            margin-top: -340px;
+        }
+    }
+
+    .btn {
+        padding: 15px 75px;
+        background: #fff;
+    }
+}
+
+.events-main-img {
+    min-height: 505px;
+    background: url('../images/content/events/events-1.jpg') 50% 50% /cover no-repeat;
+}
+
+.events-video {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 100%;
+    max-width: 300px;
+    padding-top: 145px;
+    background: url('../images/content/events/events-2.jpg') 50% 50% /cover no-repeat;
+    cursor: pointer;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        margin-right: 0;
+        margin-left: 30%;
+        margin-top: -70px;
+    }
+
+    &.video-2 {
+        margin-left: 20px;
+        background: url('../images/content/events/events-3.jpg') 50% 50% /cover no-repeat;
+
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+
+    &-name {
+        font-family: 'Cuprum', sans-serif;
+        font-weight: normal;
+    }
+
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.events-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    border-bottom: 1px solid #aeaeae;
+}
+.events-custom-figure {
+    top: 560px;
+    left: -30px;
+    right: -30px;
+    bottom: 35px;
+    border: 1px solid #818181;
+    z-index: -2;
+
+    @media (max-width: map_get($grid-breakpoints, lg)) {
+        display: none;
+    }
+}
