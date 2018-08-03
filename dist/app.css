@@ -9951,11 +9951,11 @@ section {
   }
 }
 
-.menu-list-item--link {
+.menu-list-link {
   color: #bababa;
 }
 
-.menu-list-item--link::before {
+.menu-list-link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -9969,23 +9969,23 @@ section {
 }
 
 @media (max-width: 576px) {
-  .menu-list-item--link::before {
+  .menu-list-link::before {
     width: 25px;
   }
 }
 
-.menu-list-item--link:hover {
+.menu-list-link:hover {
   padding-left: 95px;
   color: #FE0809;
 }
 
 @media (max-width: 576px) {
-  .menu-list-item--link:hover {
+  .menu-list-link:hover {
     padding-left: 40px;
   }
 }
 
-.menu-list-item--link:hover::before {
+.menu-list-link:hover::before {
   opacity: 1;
 }
 

@@ -84,7 +84,7 @@
     z-index: 10;
 }
 .menu-list {
-    @media (max-width: 576px) {
+    @media (max-width: map_get($grid-breakpoints, sm)) {
         max-width: 150px;
         margin: 0 auto;
     }
@@ -96,41 +96,42 @@
         font-size: 36px;
         font-weight: bold;
 
-        @media (max-width: 576px) {
+        @media (max-width: map_get($grid-breakpoints, sm)) {
             font-size: 24px;
             text-align: center;
+        }  
+    }
+    
+
+    &-link {
+        color: #bababa;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: .5em;
+            width: 65px;
+            height: 3px;
+            background-color: #fff;
+            opacity: 0;
+            transition: linear .3s;
+
+            @media (max-width: 576px) {
+                width: 25px;
+            }
         }
 
-        &--link {
-            color: #bababa;
-            
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: .5em;
-                width: 65px;
-                height: 3px;
-                background-color: #fff;
-                opacity: 0;
-                transition: linear .3s;
+        &:hover {
+            padding-left: 95px;
+            color: $danger;
 
-                @media (max-width: 576px) {
-                    width: 25px;
-                }
+            @media (max-width: map_get($grid-breakpoints, sm)) {
+                padding-left: 40px;
             }
 
-            &:hover {
-                padding-left: 95px;
-                color: $danger;
-
-                @media (max-width: 576px) {
-                    padding-left: 40px;
-                }
-
-                &::before {
-                    opacity: 1;
-                }
+            &::before {
+                opacity: 1;
             }
         }
     }

@@ -9,7 +9,7 @@
     color: #fff;
     background: url('../images/icon/logo.png') 0 0 /100% no-repeat;
     z-index: 11;
-    @media (max-width: 576px) {
+    @media (max-width: map_get($grid-breakpoints, sm)) {
         left: 15px;
     }
     .first-word {

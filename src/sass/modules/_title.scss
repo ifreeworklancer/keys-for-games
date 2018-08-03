@@ -3,7 +3,7 @@
     margin: 0 0 50px;
     line-height: 1;
     
-    @media (max-width: 576px) {
+    @media (max-width: map_get($grid-breakpoints, sm)) {
         margin-bottom: 25px;
     }
 }
