@@ -44,8 +44,10 @@
         padding-top: 575px;
 
         .big-img {
-            background: url('../images/content/catalog/farcry-5.jpg') 50% 50% /cover no-repeat;
             height: 575px;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
     
@@ -54,7 +56,9 @@
         right: 0;
         left: 0;
         height: 240px;
-        background: url('../images/content/catalog/warcraft.jpg') 50% 50% /cover no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         transition: height linear .3s;
     }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Catalog page</title>
+    <title>Catalog card</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
@@ -38,6 +38,7 @@
             <path d="M23.745,26.048c-0.276,0-0.5-0.224-0.5-0.5v-7.25c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.25
                 C24.245,25.825,24.021,26.048,23.745,26.048z" fill="#4b4b4b"></path>
         </symbol>
+
         <symbol id="facebook" viewBox="0 0 612 612">
             <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
                 C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
@@ -45,6 +46,7 @@
             <path d="M317.739,482.617V306h58.279l9.208-58.529h-67.487v-29.348c0-15.272,5.007-29.849,26.928-29.849h43.813v-58.418h-62.201
                 c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z" fill="#4b4b4b"></path>
         </symbol>
+
         <symbol id="google" viewBox="0 0 31.5 31.5">
             <style type="text/css">
                 .st0 {
@@ -238,6 +240,9 @@
                             <a href="#" class="menu-list-link">главная</a>
                         </li>
                         <li class="menu-list-item">
+                            <a href="#" class="menu-list-link">каталог</a>
+                        </li>
+                        <li class="menu-list-item">
                             <a href="#" class="menu-list-link">события</a>
                         </li>
                         <li class="menu-list-item">
@@ -278,7 +283,7 @@
         </div>
     </header>
 
-    <main id="catalog-page-main" class="position-relative">
+    <main id="catalog-card-main" class="position-relative">
 
         <section id="filter">
             <div class="container mb-0">
@@ -318,318 +323,7 @@
             </div>
         </section>
 
-        <section id="catalog-page">
-            <div class="catalog-page-banner position-absolute" style="background-image: url('images/bg/catalog-page-banner.jpg');"></div>
-            <div class="container">
-
-                <ul class="breadcrumb-list d-flex list-unstyled">
-                    <li class="breadcrumb-list__item position-relative"><a href="#" class="text-uppercase text-white">главная</a></li>
-                    <li class="breadcrumb-list__item position-relative"><a href="#" class="text-uppercase">каталог</a></li>
-                </ul>
-
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="section-title text-white">каталог</h2>
-                    </div>
-                    <div class="col-12">
-                        <form class="form-inline catalog-form-search">
-                            <span class="input input--makiko w-100 m-0">
-                                <input class="input__field input__field--makiko" type="text" id="input-search">
-                                <label class="input__label input__label--makiko" for="input-search">
-                                    <span class="input__label-content input__label-content--makiko">Поиск</span>
-                                </label>
-                            </span>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="row align-items-end">
-                    <div class="col-md-8">
-                        <div class="catalog-item big-item position-relative">
-                            <a href="#" class="catalog-item-img big-img d-block position-absolute" style="background-image: url('images/content/catalog/farcry-5.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-sm-7 d-flex justify-content-center justify-content-sm-between align-items-center flex-column flex-sm-row align-items-center">
-                        <div class="prev-next-arrow-pagination d-flex justify-content-between align-items-center mb-4 mb-sm-0">
-                            <div class="prev-arrow-pagination font-weight-bold text-dark text-uppercase d-flex justify-content-center align-items-center">
-                                <svg width="35" height="25" class="pr-2">
-                                    <use xlink:href="#slick-left-arrow"></use>
-                                </svg>
-                                <span class="arrow-text">ПРЕД</span>
-                            </div>
-                            <div class="next-arrow-pagination font-weight-bold text-dark text-uppercase d-flex justify-content-center align-items-center">
-                                <span class="arrow-text">СЛЕД</span>
-                                <svg width="35" height="25" class="pl-2">
-                                    <use xlink:href="#slick-right-arrow"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <ul class="catalog-pagination-list d-flex list-unstyled m-0">
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">01</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">02</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">...</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">99</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="viewed-product">
-            <div class="container">
-                <div class="col-12">
-                    <h2 class="section-title text-dark">просмотренные товары</h2>
-                </div>
-
-                <div class="rest-product-slider position-relative">
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="prev-next-arrow-rest d-flex justify-content-between">
-                    <div class="rest-prev-arrow font-weight-bold text-dark">ПРЕД
-                        <svg width="35" height="25" class="pl-2">
-                            <use xlink:href="#slick-left-arrow"></use>
-                        </svg>
-                    </div>
-                    <div class="rest-next-arrow font-weight-bold text-dark">
-                        <svg width="35" height="25" class="pr-2">
-                            <use xlink:href="#slick-right-arrow"></use>
-                        </svg>СЛЕД
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="character-img position-absolute">
-            <img src="images/content/catalog/page/god-of-war.png" alt="god of war">
-        </div>
-
+        
     </main>
 
     <footer id="app-footer">

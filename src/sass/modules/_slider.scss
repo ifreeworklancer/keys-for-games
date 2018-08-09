@@ -1,56 +1,3 @@
-.number-slider-header {
-    left: 22%;
-    bottom: 30px;
-    user-select: none;
-
-    @media (max-width: 1205px)  {
-        left: 5.5%;
-        bottom: 70px;
-    }
-
-    #index-slider-header {
-        font-size: 36px;
-        line-height: .5;
-        margin-right: 5px;
-
-        &::before {
-            content: '0';
-        }
-    }
-
-    #last-slider-header {
-        color: #9a9a9a;
-        padding-left: 10px;
-        margin-bottom: -5px;
-
-        &::before {
-            content: '0';
-        }
-        &::after {
-            content: '/';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-}
-
-.prev-next-arrow-header {
-    width: 100%;
-    max-width: 200px;
-    bottom: -40px;
-    left: 15%;
-    z-index: 20;
-    cursor: pointer;
-
-    @media (max-width: 1205px)  {
-        left: 5%;
-        bottom: 25px;
-        max-width: 90px;
-        font-size: 0;
-    }
-}
-
 .prev-arrow {
     opacity: .5;
     transition: .3s;
@@ -67,7 +14,6 @@
 
 .header-slider-js {
 
-   
     .flickity-page-dots {
         bottom: -90px;
         left: 35%;
@@ -162,6 +108,54 @@
 
         @media (max-width: map_get($grid-breakpoints, sm))  {
             padding: 0 15px;
+        }
+
+        li {
+            margin: 0;
+            flex: 1 0.6 auto !important;
+            height: 2px;
+            background-color: $light;
+            border-radius: 0;
+
+            &.is-selected {
+                height: 3px;
+                background-color: $danger !important;
+                margin-top: -1px;
+
+                .dot-numbers {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.rest-product-slider {
+    margin-bottom: 40px;
+
+    .rest-item {
+        width: 30%;
+        margin-right: 50px;
+
+        @media (max-width: map_get($grid-breakpoints, sm))  {
+            width: 100%;
+        }
+
+    }
+
+    .flickity-page-dots {
+        bottom: -130px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        max-width: 450px;
+        height: 5px;
+        margin-bottom: 60px;
+        display: flex !important;
+
+        @media (max-width: map_get($grid-breakpoints, sm))  {
+            padding: 0 15px;
+            bottom: -180px;
         }
 
         li {

@@ -1,0 +1,23 @@
+.breadcrumb-list {
+
+    &__item {
+        margin-right: 5px;
+
+        a {
+            color: #191919;
+        }
+
+        &::before {
+            content: '/';
+            padding-right: 5px;
+        }
+
+        &:first-of-type {
+
+            &::before {
+                content: '';
+                padding-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+#filter {
+    background-color: #331b1b;
+    z-index: 6;
+}
+
+.filter-list {
+    color: #8c4848;
+
+    &__item {
+        padding: 15px;
+        transition: .5s;
+        cursor: pointer;
+
+        a {
+            color: #8c4848;
+        }
+
+        &--icon {
+            width: 30px;
+            background-color: #291313;
+
+            .add-filter-icon {
+
+                .line {
+                    width: 5px;
+                    height: 4px;
+                    background-color: #8C4848;
+                    margin: 2px;
+                    transition: .5s;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #291313;
+
+            a {
+                color: #fff;
+            }
+
+            .add-filter-icon {
+
+                .line {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

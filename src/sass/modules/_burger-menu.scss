@@ -74,6 +74,7 @@
         }
     }
 }
+
 #menu-nav {
     display: none;
     position: absolute;
@@ -83,6 +84,7 @@
     background-image: linear-gradient( 132deg, rgb(12,12,12) 6%, rgb(10,10,10) 78%, rgb(8,8,8) 99%);
     z-index: 10;
 }
+
 .menu-list {
     @media (max-width: map_get($grid-breakpoints, sm)) {
         max-width: 150px;

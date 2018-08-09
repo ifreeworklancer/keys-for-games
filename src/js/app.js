@@ -1,9 +1,7 @@
 import jquery from 'jquery';
-import slick from 'slick-carousel';
 import Flickity from 'flickity';
 
 window.jQuery = window.$ = jquery;
-window.slick = slick;
 
 import 'flickity/dist/flickity.css';
 
@@ -115,33 +113,30 @@ if(elem3) {
 
 
 /**
- * Sliders viewed
+ * Sliders rest
  */
-var elem4 = document.querySelector('.viewed-product-slider');
+var elem4 = document.querySelector('.rest-product-slider');
 
 if(elem4) {
   const flkty4 = new Flickity(elem4, {
 
     groupCells: 1,
-    cellSelector: '.viewed-item',
+    cellSelector: '.rest-item',
     prevNextButtons: false,
     wrapAround: true,
     contain: false
   
   });
   
-  var nextArrowViewed = document.querySelector('#viewed-next-arrow');
+  var nextArrowRest = document.querySelector('.rest-next-arrow');
   
-  nextArrowViewed.addEventListener('click', function () {
+  nextArrowRest.addEventListener('click', function () {
     flkty4.next(true, false);
   });
   
-  var prevArrowViewed = document.querySelector('#viewed-prev-arrow');
+  var prevArrowRest = document.querySelector('.rest-prev-arrow');
   
-  prevArrowViewed.addEventListener('click', function () {
+  prevArrowRest.addEventListener('click', function () {
     flkty4.previous(true, false);
   });
 }
-
-
-console.log(1);
