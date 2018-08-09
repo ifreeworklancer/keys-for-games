@@ -1,8 +1,11 @@
 import jquery from 'jquery';
 import slick from 'slick-carousel';
+import Flickity from 'flickity';
 
 window.jQuery = window.$ = jquery;
 window.slick = slick;
+
+import 'flickity/dist/flickity.css';
 
 (function () {
 
@@ -34,37 +37,111 @@ window.slick = slick;
     }
   });
 
-  /**
-   * Sliders
-   */
-  $('.header-slider-js').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    infinite: false,
-    prevArrow: '<button type="button" class="prev-arrow font-weight-bold text-dark">ПРЕД<svg width="35" height="25" class="pl-2"><use xlink:href="#slick-left-arrow"></use></svg></button>',
-    nextArrow: '<button type="button" class="next-arrow font-weight-bold text-dark"><svg width="35" height="25" class="pr-2"><use xlink:href="#slick-right-arrow"></use></svg>СЛЕД</button>',
-    dots: true,
-    customPaging: function (slider, i) {
-      var thumb = $(slider.$slides[i]).data();
-      return '<a class="dot-numbers">' + '0' + (i + 1) + '</a>';
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true,
-          prevArrow: '<button type="button" class="prev-arrow"><svg width="35" height="25"><use xlink:href="#slick-left-arrow"></use></svg></button>',
-          nextArrow: '<button type="button" class="next-arrow"><svg width="35" height="25"><use xlink:href="#slick-right-arrow"></use></svg></button>',
-        }
-      }
-    ]
-
-  });
-
 
 })(jQuery)
+
+
+/**
+ * Sliders header
+ */
+var elem1 = document.querySelector('.header-slider-js');
+if(elem1) {
+
+  const flkty1 = new Flickity(elem1, {
+
+    prevNextButtons: false,
+    cellAlign: 'left',
+    contain: true
+  
+  });
+  
+  
+  var nextArrowHeader = document.querySelector('#header-next-arrow');
+  var indexSliderHeader = document.getElementById('index-slider-header');
+  indexSliderHeader.innerText = flkty1.selectedIndex + 1;
+  
+  nextArrowHeader.addEventListener('click', function () {
+    flkty1.next(true, false);
+    indexSliderHeader.innerText = flkty1.selectedIndex + 1;
+  });
+  
+  var prevArrowHeader = document.querySelector('#header-prev-arrow');
+  
+  prevArrowHeader.addEventListener('click', function () {
+    flkty1.previous(true, false);
+    indexSliderHeader.innerText = flkty1.selectedIndex + 1;
+  });
+  
+  var cellElements = flkty1.getCellElements().length;
+  var lastSliderHeader = document.getElementById('last-slider-header');
+  
+  lastSliderHeader.innerText = cellElements;
+  
+}
+
+
+
+/**
+ * Sliders comments
+ */
+var elem3 = document.querySelector('.comments-slider');
+
+if(elem3) {
+
+  const flkty3 = new Flickity(elem3, {
+
+    groupCells: 1,
+    cellSelector: '.comments-item',
+    prevNextButtons: false,
+    wrapAround: true,
+    initialIndex: 1,
+    cellAlign: 'center',
+    contain: false
+  
+  });
+  
+  var nextArrowComments = document.querySelector('#comments-next-arrow');
+  
+  nextArrowComments.addEventListener('click', function () {
+    flkty3.next(true, false);
+  });
+  
+  var prevArrowComments = document.querySelector('#comments-prev-arrow');
+  
+  prevArrowComments.addEventListener('click', function () {
+    flkty3.previous(true, false);
+  });
+}
+
+
+/**
+ * Sliders viewed
+ */
+var elem4 = document.querySelector('.viewed-product-slider');
+
+if(elem4) {
+  const flkty4 = new Flickity(elem4, {
+
+    groupCells: 1,
+    cellSelector: '.viewed-item',
+    prevNextButtons: false,
+    wrapAround: true,
+    contain: false
+  
+  });
+  
+  var nextArrowViewed = document.querySelector('#viewed-next-arrow');
+  
+  nextArrowViewed.addEventListener('click', function () {
+    flkty4.next(true, false);
+  });
+  
+  var prevArrowViewed = document.querySelector('#viewed-prev-arrow');
+  
+  prevArrowViewed.addEventListener('click', function () {
+    flkty4.previous(true, false);
+  });
+}
+
+
+console.log(1);

@@ -1,16 +1,6 @@
 #news {
     padding-top: 80px;
-    padding-bottom: 180px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 385px;
-        background: url('../images/bg/news-bg.jpg') 50% 50% /cover no-repeat;
-    }
+    padding-bottom: 180px;    
 }
 .news-item {
 

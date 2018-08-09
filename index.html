@@ -289,11 +289,26 @@
                 </div>
             </div>
 
-        </section>
+            <div class="prev-next-arrow-header d-flex justify-content-between position-absolute">
+                <div id="header-prev-arrow" class="prev-arrow font-weight-bold text-dark">ПРЕД
+                    <svg width="35" height="25" class="pl-2">
+                        <use xlink:href="#slick-left-arrow"></use>
+                    </svg>
+                </div>
+                <div id="header-next-arrow" class="next-arrow font-weight-bold text-dark">
+                    <svg width="35" height="25" class="pr-2">
+                        <use xlink:href="#slick-right-arrow"></use>
+                    </svg>СЛЕД
+                </div>
+            </div>
 
-        <section id="header-slider">
-            <div class="header-slider-js">
-                <div class="slider-item position-relative">
+            <div class="number-slider-header position-absolute d-flex justify-content-between">
+                <div id="index-slider-header" class="text-white text-uppercase"></div>
+                <div id="last-slider-header" class="position-relative"></div>
+            </div>
+            
+            <div class="header-slider-js position-absolute">
+                <div class="slider-item">
                     <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
                         <div class="hover position-absolute"></div>
                         <div class="slider-item--info d-flex justify-content-between">
@@ -307,117 +322,92 @@
                         </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/farcry-5.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">farcry 5</div>
-                                    <div class="item-value text-uppercase font-weight-bold">02</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/farcry-5.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">farcry 5</div>
+                            <div class="item-value text-uppercase font-weight-bold">02</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/mortal_kombat.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">mortal kombat</div>
-                                    <div class="item-value text-uppercase font-weight-bold">03</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/mortal_kombat.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">mortal kombat</div>
+                            <div class="item-value text-uppercase font-weight-bold">03</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/warcraft.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">warcraft</div>
-                                    <div class="item-value text-uppercase font-weight-bold">04</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/warcraft.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">warcraft</div>
+                            <div class="item-value text-uppercase font-weight-bold">04</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
-                                    <div class="item-value text-uppercase font-weight-bold">05</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
+                            <div class="item-value text-uppercase font-weight-bold">05</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
-                                    <div class="item-value text-uppercase font-weight-bold">05</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
+                            <div class="item-value text-uppercase font-weight-bold">05</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="slick-slide">
-                    <div>
-                        <div class="slider-item position-relative">
-                            <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
-                                <div class="hover position-absolute"></div>
-                                <div class="slider-item--info d-flex justify-content-between">
-                                    <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
-                                    <div class="item-value text-uppercase font-weight-bold">05</div>
-                                </div>
-                                <a class="more-info position-absolute text-uppercase font-weight-bold text-white" tabindex="-1">узнать больше
-                                    <svg width="30" height="30">
-                                        <use xlink:href="#more-info-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="slider-item">
+                    <div class="slider-item--content" style="background-image: url(images/content/catalog/crew-2.jpg);">
+                        <div class="hover position-absolute"></div>
+                        <div class="slider-item--info d-flex justify-content-between">
+                            <div class="game-name text-uppercase font-weight-bold text-white">cofbp 4</div>
+                            <div class="item-value text-uppercase font-weight-bold">05</div>
                         </div>
+                        <a class="more-info position-absolute text-uppercase font-weight-bold text-white">узнать больше
+                            <svg width="30" height="30">
+                                <use xlink:href="#more-info-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+
         </section>
 
         <section id="catalog">
@@ -579,7 +569,9 @@
             </div>
         </section>
 
-        <section id="between"><img src="images/content/between/man.png" alt="cdbl4" class="between-images"></section>
+        <section id="between">
+            <img src="images/content/between/man.png" alt="cdbl4" class="between-images">
+        </section>
 
         <section id="events">
             <div class="events-bg">
@@ -798,6 +790,83 @@
                 </div>
             </div>
         </section>
+
+        <section id="comments">
+            <div class="container">
+                <h2 class="section-title">отзывы</h2>
+            </div>
+
+            <div class="comments-slider position-relative">
+
+                <div class="prev-next-arrow-comments d-flex justify-content-between position-absolute">
+                    <div id="comments-prev-arrow" class="prev-arrow font-weight-bold text-dark">ПРЕД
+                        <svg width="35" height="25" class="pl-2">
+                            <use xlink:href="#slick-left-arrow"></use>
+                        </svg>
+                    </div>
+                    <div id="comments-next-arrow" class="next-arrow font-weight-bold text-dark">
+                        <svg width="35" height="25" class="pr-2">
+                            <use xlink:href="#slick-right-arrow"></use>
+                        </svg>СЛЕД
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-1.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">влад</div>
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-2.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">александр</div>
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-3.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">вика</div>
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-2.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">александр</div>
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-1.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">влад</div>
+                    </div>
+                </div>
+
+                <div class="comments-item">
+                    <div class="comments-item__avatar mx-auto mb-4" style="background-image: url('images/content/comments/comments-3.png');"></div>
+                    <div class="comments-item__text text-center">
+                        Купил ключ на прохождение ИГРЫ в 2017, всё подошло, оперативный, качественный сервис. В техподдержке подсказали как воспользоваться.
+                        <div class="text-right comments-item__name text-uppercase mt-4 pr-4">вика</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-danger text-dark">оставить отзыв</a>
+            </div>
+
+        </section>
+
     </main>
 
     <footer id="app-footer">

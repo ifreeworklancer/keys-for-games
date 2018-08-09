@@ -1,4 +1,9 @@
 #catalog {
+    margin-top: 180px;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        margin-top: 120px;
+    }
 
     .btn-mobile {
         display: none;
