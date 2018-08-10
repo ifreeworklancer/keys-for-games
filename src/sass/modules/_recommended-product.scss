@@ -1,0 +1,46 @@
+#recommended-product {
+    padding-top: 100px;
+    padding-bottom: 240px;
+
+    .section-title {
+        @media (max-width: map_get($grid-breakpoints, md))  {
+            font-size: 24px;
+        }
+    }
+
+    .prev-next-arrow-rest {
+        width: 100%;
+        max-width: 220px;
+        margin-left: 5px;
+        cursor: pointer;
+
+        @media (max-width: 1205px)  {
+            max-width: 120px;
+        }
+
+        svg {
+            margin-top: -2px;
+        }
+    }
+    
+    .rest-prev-arrow {
+        color: #c7c7c7;
+        transition: .3s;
+        user-select: none;
+        font-size: 16px;
+
+        @media (max-width: 1205px)  {
+            max-width: 90px;
+            font-size: 0;
+        }
+    
+        &:hover {
+            color: #232323;
+        }
+    }
+    
+    .rest-next-arrow {
+        @extend .rest-prev-arrow;
+
+    }
+}

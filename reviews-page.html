@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Catalog page</title>
+    <title>Reviews page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
@@ -167,10 +167,6 @@
             <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"
                 fill="#FE0809"></path>
         </symbol>
-
-        <symbol id="filter-icon" viewBox="0 0 459 459">
-            <path d="M178.5,382.5h102v-51h-102V382.5z M0,76.5v51h459v-51H0z M76.5,255h306v-51h-306V255z" fill="#FFFFFF" />
-        </symbol>
     </svg>
 
     <header id="app-header">
@@ -238,10 +234,10 @@
                             <a href="#" class="menu-list-link">главная</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="#" class="menu-list-link">события</a>
+                            <a href="#" class="menu-list-link">каталог</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="#" class="menu-list-link">обзоры</a>
+                            <a href="#" class="menu-list-link">события</a>
                         </li>
                         <li class="menu-list-item">
                             <a href="#" class="menu-list-link">новости</a>
@@ -278,7 +274,7 @@
         </div>
     </header>
 
-    <main id="catalog-page-main" class="position-relative">
+    <main id="reviews-page-main" class="position-relative">
 
         <section id="filter">
             <div class="container mb-0">
@@ -318,159 +314,94 @@
             </div>
         </section>
 
-        <section id="catalog-page">
-            <div class="catalog-page-banner position-absolute" style="background-image: url('images/bg/catalog-page-banner.jpg');"></div>
+        <section id="reviews-page">
+            <div class="reviews-page-banner position-absolute" style="background-image: url('images/bg/reviews-page-banner.jpg');"></div>
             <div class="container">
 
                 <ul class="breadcrumb-list d-flex list-unstyled">
-                    <li class="breadcrumb-list__item position-relative"><a href="#" class="text-uppercase text-white">главная</a></li>
-                    <li class="breadcrumb-list__item position-relative"><a href="#" class="text-uppercase">каталог</a></li>
+                    <li class="breadcrumb-list__item position-relative">
+                        <a href="#" class="text-uppercase text-white">главная</a>
+                    </li>
+                    <li class="breadcrumb-list__item position-relative">
+                        <a href="#" class="text-uppercase">обзоры</a>
+                    </li>
                 </ul>
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title text-white">каталог</h2>
+                        <h2 class="section-title text-white">обзоры</h2>
                     </div>
                     <div class="col-12">
-                        <form class="form-inline catalog-form-search">
-                            <span class="input input--makiko w-100 m-0">
-                                <input class="input__field input__field--makiko" type="text" id="input-search">
-                                <label class="input__label input__label--makiko" for="input-search">
-                                    <span class="input__label-content input__label-content--makiko">Поиск</span>
-                                </label>
-                            </span>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="row align-items-end">
-                    <div class="col-md-8">
-                        <div class="catalog-item big-item position-relative">
-                            <a href="#" class="catalog-item-img big-img d-block position-absolute" style="background-image: url('images/content/catalog/farcry-5.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
+                        <div class="reviews-page-item reviews-page-item--big position-relative">
+                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold">ОБЗОР MORTAL KOMBAT X</div>
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/mortal_kombat_x.jpg')">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/reviews-card.jpg');">
                             </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold ml-3">GOD OF WAR</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/trailer-card.jpg');">
+                            </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">GOD OF WAR</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/reviews-1.jpg');">
+                            </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">Hellblade: Senua's Sacrifice</div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc.jpg');">
                             </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc.jpg');">
                             </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
                         </div>
                     </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="reviews-page-item position-relative">
+                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/stalker.jpg');">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');"></a>
-                            <div class="catalog-item-info position-relative mx-3 pb-2">
-                                <div class="d-flex justify-content-between genre text-light">Аркада
-                                    <del class="old-value">1500грн</del>
-                                </div>
-                                <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                    <span class="value text-lowercase text-danger">999грн</span>
-                                </div>
-                            </div>
+                            <svg width="55" height="55" class="position-absolute">
+                                <use xlink:href="#multimedia-play"></use>
+                            </svg>
+                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">STALKER 2</div>
                         </div>
                     </div>
                 </div>
@@ -508,13 +439,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+
         </section>
 
-        <section id="viewed-product">
+        <section id="recommended-product">
             <div class="container">
                 <div class="col-12">
-                    <h2 class="section-title text-dark">просмотренные товары</h2>
+                    <h2 class="section-title text-dark">РЕКОМЕНДУЕМЫЕ ТОВАРЫ</h2>
                 </div>
 
                 <div class="rest-product-slider position-relative">
@@ -612,13 +543,13 @@
                 </div>
 
                 <div class="prev-next-arrow-rest d-flex justify-content-between">
-                    <div class="rest-prev-arrow font-weight-bold text-dark">ПРЕД
-                        <svg width="35" height="25" class="pl-2">
+                    <div class="rest-prev-arrow font-weight-bold">ПРЕД
+                        <svg width="35" height="25" class="ml-4 mr-3">
                             <use xlink:href="#slick-left-arrow"></use>
                         </svg>
                     </div>
-                    <div class="rest-next-arrow font-weight-bold text-dark">
-                        <svg width="35" height="25" class="pr-2">
+                    <div class="rest-next-arrow font-weight-bold">
+                        <svg width="35" height="25" class="mr-4">
                             <use xlink:href="#slick-right-arrow"></use>
                         </svg>СЛЕД
                     </div>
@@ -627,7 +558,7 @@
         </section>
 
         <div class="character-img position-absolute">
-            <img src="images/content/catalog/page/god-of-war.png">
+            <img src="images/content/reviews/page/Lara.png">
         </div>
 
     </main>
