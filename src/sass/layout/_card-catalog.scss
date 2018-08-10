@@ -1,0 +1,180 @@
+#catalog-card {
+    background: url('../images/bg/catalog-card-bg.jpg') 50% 50% /cover no-repeat;
+
+    .container {
+        padding-top: 45px;
+        padding-bottom: 90px;
+        background-color: #fff;
+        box-shadow: 0px 0px 43.74px 10.26px rgba(0, 0, 0, 0.21);
+        z-index: 2;
+    }
+
+    .breadcrumb-list {
+        margin-bottom: 50px;
+    }
+
+    .card-img {
+        width: 100%;
+        padding-top: 570px;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .reviews-card {
+
+        &__title {
+            font-size: 36px;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+
+            &--small {
+                font-size: 28px;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            padding-top: 260px;
+
+            svg {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card-item {
+
+    .price {
+        font-family: 'Oswald', sans-serif;
+
+        &__old {
+            font-size: 22px;
+            color: #a4a4a4;
+        }
+
+        &__new {
+            font-size: 39px;
+        }
+    }
+
+    &__name {
+        color: #161616;
+    }
+
+    &__title {
+        padding: 20px 0;
+
+        .item-title-text {
+            z-index: 3;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            left: -80px;
+            right: -30px;
+            top: 0;
+            bottom: 0;
+            background-color: #c30d0d;
+            z-index: 2;
+
+            @media (max-width: map_get($grid-breakpoints, sm))  {
+                right: -30px;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -30px;
+            top: -20px;
+            width: 15px;
+            height: 20px;
+            background-image: url('../images/icon/triangle.svg');
+            background-repeat: no-repeat;
+
+            @media (max-width: map_get($grid-breakpoints, sm))  {
+                width: 0;
+            }
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: #242424;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #aeaeae;
+        transition: .5s;
+    }
+
+    &__icon {  
+        transition: .5s;
+        right: 0;
+
+        &:hover {
+            right: -15px;
+        }
+    }
+}
+
+#recommended-product {
+    padding-top: 100px;
+    padding-bottom: 240px;
+
+    .section-title {
+        @media (max-width: map_get($grid-breakpoints, md))  {
+            font-size: 24px;
+        }
+    }
+
+    .prev-next-arrow-rest {
+        width: 100%;
+        max-width: 220px;
+        margin-left: 5px;
+        cursor: pointer;
+
+        @media (max-width: 1205px)  {
+            max-width: 120px;
+        }
+
+        svg {
+            margin-top: -2px;
+        }
+    }
+    
+    .rest-prev-arrow {
+        color: #c7c7c7;
+        transition: .3s;
+        user-select: none;
+        font-size: 16px;
+
+        @media (max-width: 1205px)  {
+            max-width: 90px;
+            font-size: 0;
+        }
+    
+        &:hover {
+            color: #232323;
+        }
+    }
+    
+    .rest-next-arrow {
+        @extend .rest-prev-arrow;
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        padding-bottom: 420px;
+        bottom: 0;
+        background: url('../images/bg/news-bg.jpg') 50% 50% /cover no-repeat;
+        z-index: -9999;
+    }
+}

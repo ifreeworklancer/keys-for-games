@@ -11171,7 +11171,7 @@ section {
   }
 }
 
-#viewed-product .rest-prev-arrow {
+#viewed-product .rest-prev-arrow, #viewed-product #recommended-product .rest-next-arrow, #recommended-product #viewed-product .rest-next-arrow {
   opacity: .5;
   -webkit-transition: .3s;
   transition: .3s;
@@ -11181,6 +11181,192 @@ section {
           user-select: none;
 }
 
-#viewed-product .rest-prev-arrow:hover {
+#viewed-product .rest-prev-arrow:hover, #viewed-product #recommended-product .rest-next-arrow:hover, #recommended-product #viewed-product .rest-next-arrow:hover {
   opacity: 1;
+}
+
+#catalog-card {
+  background: url("../images/bg/catalog-card-bg.jpg") 50% 50%/cover no-repeat;
+}
+
+#catalog-card .container {
+  padding-top: 45px;
+  padding-bottom: 90px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 43.74px 10.26px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 0px 43.74px 10.26px rgba(0, 0, 0, 0.21);
+  z-index: 2;
+}
+
+#catalog-card .breadcrumb-list {
+  margin-bottom: 50px;
+}
+
+#catalog-card .card-img {
+  width: 100%;
+  padding-top: 570px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#catalog-card .reviews-card__title {
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+#catalog-card .reviews-card__title--small {
+  font-size: 28px;
+}
+
+#catalog-card .reviews-card__img {
+  width: 100%;
+  padding-top: 260px;
+}
+
+#catalog-card .reviews-card__img svg {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.card-item .price {
+  font-family: 'Oswald', sans-serif;
+}
+
+.card-item .price__old {
+  font-size: 22px;
+  color: #a4a4a4;
+}
+
+.card-item .price__new {
+  font-size: 39px;
+}
+
+.card-item__name {
+  color: #161616;
+}
+
+.card-item__title {
+  padding: 20px 0;
+}
+
+.card-item__title .item-title-text {
+  z-index: 3;
+}
+
+.card-item__title::before {
+  content: '';
+  position: absolute;
+  left: -80px;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  background-color: #c30d0d;
+  z-index: 2;
+}
+
+@media (max-width: 576px) {
+  .card-item__title::before {
+    right: -30px;
+  }
+}
+
+.card-item__title::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: -20px;
+  width: 15px;
+  height: 20px;
+  background-image: url("../images/icon/triangle.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  .card-item__title::after {
+    width: 0;
+  }
+}
+
+.card-item__desc {
+  font-size: 16px;
+  color: #242424;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #aeaeae;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card-item__icon {
+  -webkit-transition: .5s;
+  transition: .5s;
+  right: 0;
+}
+
+.card-item__icon:hover {
+  right: -15px;
+}
+
+#recommended-product {
+  padding-top: 100px;
+  padding-bottom: 240px;
+}
+
+@media (max-width: 768px) {
+  #recommended-product .section-title, #recommended-product .menu-list-item {
+    font-size: 24px;
+  }
+}
+
+#recommended-product .prev-next-arrow-rest {
+  width: 100%;
+  max-width: 220px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1205px) {
+  #recommended-product .prev-next-arrow-rest {
+    max-width: 120px;
+  }
+}
+
+#recommended-product .prev-next-arrow-rest svg {
+  margin-top: -2px;
+}
+
+#recommended-product .rest-prev-arrow, #recommended-product .rest-next-arrow {
+  color: #c7c7c7;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 16px;
+}
+
+@media (max-width: 1205px) {
+  #recommended-product .rest-prev-arrow, #recommended-product .rest-next-arrow {
+    max-width: 90px;
+    font-size: 0;
+  }
+}
+
+#recommended-product .rest-prev-arrow:hover, #recommended-product .rest-next-arrow:hover {
+  color: #232323;
+}
+
+#recommended-product::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  padding-bottom: 420px;
+  bottom: 0;
+  background: url("../images/bg/news-bg.jpg") 50% 50%/cover no-repeat;
+  z-index: -9999;
 }
