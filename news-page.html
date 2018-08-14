@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reviews page</title>
+    <title>News page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
@@ -38,6 +38,7 @@
             <path d="M23.745,26.048c-0.276,0-0.5-0.224-0.5-0.5v-7.25c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.25
                 C24.245,25.825,24.021,26.048,23.745,26.048z" fill="#4b4b4b"></path>
         </symbol>
+
         <symbol id="facebook" viewBox="0 0 612 612">
             <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
                 C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
@@ -45,6 +46,7 @@
             <path d="M317.739,482.617V306h58.279l9.208-58.529h-67.487v-29.348c0-15.272,5.007-29.849,26.928-29.849h43.813v-58.418h-62.201
                 c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z" fill="#4b4b4b"></path>
         </symbol>
+
         <symbol id="google" viewBox="0 0 31.5 31.5">
             <style type="text/css">
                 .st0 {
@@ -167,6 +169,10 @@
             <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"
                 fill="#FE0809"></path>
         </symbol>
+
+        <symbol id="filter-icon" viewBox="0 0 459 459">
+            <path d="M178.5,382.5h102v-51h-102V382.5z M0,76.5v51h459v-51H0z M76.5,255h306v-51h-306V255z" fill="#FFFFFF" />
+        </symbol>
     </svg>
 
     <header id="app-header">
@@ -242,7 +248,7 @@
                             <a href="#" class="menu-list-link">события</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="#" class="menu-list-link">новости</a>
+                            <a href="#" class="menu-list-link">обзоры</a>
                         </li>
                         <li class="menu-list-item">
                             <a href="#" class="menu-list-link">акции</a>
@@ -276,136 +282,177 @@
         </div>
     </header>
 
-    <main id="reviews-page-main" class="position-relative">
+    <main id="news-page-main" class="position-relative">
 
-        <section id="filter">
-            <div class="container mb-0">
-                <ul class="filter-list d-flex list-unstyled justify-content-between flex-wrap flex-column flex-sm-row mb-0">
-                    <li class="filter-list__item d-flex align-items-center justify-content-center">
-                        <svg width="20" height="15" class="mr-2">
-                            <use xlink:href="#filter-icon"></use>
-                        </svg>
-                        <a href="#">Фильтр игр</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">экшн</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">аркада</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">симулятор</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">стратегия</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">приключения</a>
-                    </li>
-                    <li class="filter-list__item filter-list__item--icon text-uppercase ml-auto mr-2 mx-sm-0">
-                        <div class="add-filter-icon d-flex justify-content-center align-items-center flex-column">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center">
-                        <a href="#">Cбросить фильтры</a>
-                    </li>
-                </ul>
+        <section id="news-page">
+            <div class="news-page-banner position-absolute"></div>
+            <div class="character-img position-absolute">
+                <img src="images/content/between/man.png" alt="">
             </div>
-        </section>
-
-        <section id="reviews-page">
-            <div class="reviews-page-banner position-absolute" style="background-image: url('images/bg/reviews-page-banner.jpg');"></div>
             <div class="container">
 
                 <ul class="breadcrumb-list d-flex list-unstyled">
                     <li class="breadcrumb-list__item position-relative">
-                        <a href="#" class="text-uppercase text-white">главная</a>
+                        <a href="#" class="text-uppercase">главная</a>
                     </li>
                     <li class="breadcrumb-list__item position-relative">
-                        <a href="#" class="text-uppercase">обзоры</a>
+                        <a href="#" class="text-uppercase">новости</a>
                     </li>
                 </ul>
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title text-white">обзоры</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="reviews-page-item reviews-page-item--big position-relative">
-                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold">ОБЗОР MORTAL KOMBAT X</div>
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/mortal_kombat_x.jpg')">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                        </div>
+                        <h2 class="section-title text-white">Новости</h2>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/reviews-card.jpg');">
+
+                    <div class="col-sm-12 col-lg-8">
+                        <div class="news-item news-item--big position-relative">
+                            <div class="news-item__img position-absolute" style="background-image: url('images/content/news/news-2.jpg');"></div>
+                            <div class="news-item-list">
+                                <h3 class="news-item-list__name text-white">Чемпионат по DOTA в Токио закончился скандалом. Двоих участников удалили
+                                </h3>
+                                <div class="news-item-list-info d-flex justify-content-between text-light">
+                                    <div class="news-item-list-info__data">16:56 05 мая 2018 </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#comments"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">26</span>
+                                    </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">65</span>
+                                    </div>
+                                </div>
                             </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold ml-3">GOD OF WAR</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/trailer-card.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">GOD OF WAR</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/reviews-1.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">Hellblade: Senua's Sacrifice</div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc.jpg');">
+                    <div class="col-sm-8 col-lg-4 mx-auto mx-lg-0">
+
+                        <div class="news-item position-relative mt-4 mt-lg-0">
+                            <div class="reviews-page-item reviews-page-item--video">
+                                <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/stalker.jpg');">
+                                </div>
+                                <svg width="55" height="55" class="video-play-icon position-absolute">
+                                    <use xlink:href="#multimedia-play"></use>
+                                </svg>
+                                <div class="reviews-page-item__title text-white font-weight-bold ml-3">STALKER 2</div>
                             </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
+                        </div>
+
+                        <div class="news-item news-item--medium position-relative">
+                            <div class="news-item__img position-absolute" style="background-image: url('images/content/news/news-1.jpg');"></div>
+                            <div class="news-item-list">
+                                <h3 class="news-item-list__name">Новая мышь от Zuoya 2018</h3>
+                                <div class="news-item-list-info d-flex justify-content-between text-light">
+                                    <div class="news-item-list-info__data">16:55 05 апреля 2018 </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#comments"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">26</span>
+                                    </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">65</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row mt-4">
+
+                    <div class="col-sm-8 col-lg-4 mx-auto mx-lg-0 mt-0 mt-lg-0">
+                        <div class="news-item position-relative">
+                            <div class="reviews-page-item mt-0">
+                                <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc-2.jpg');">
+                                </div>
+                                <svg width="55" height="55" class="video-play-icon position-absolute">
+                                    <use xlink:href="#multimedia-play"></use>
+                                </svg>
+                                <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
+                                <div class="news-item-list-info d-flex justify-content-between text-light ml-3">
+                                    <div class="news-item-list-info__data">16:55 05 апреля 2018 </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#comments"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">26</span>
+                                    </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">65</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc-2.jpg');">
+
+                    <div class="col-sm-8 col-lg-4 mx-auto mx-lg-0 mt-4 mt-lg-0">
+                        <div class="news-item pt-4 pb-2 position-relative">
+                            <div class="news-item-list pt-0">
+                                <h3 class="news-item-list__name">EA GAMES в 2019 покорят мир</h3>
+                                <p class="news-item-list__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                    totam rem aperiam eaque...</p>
+                                <div class="news-item-list-info d-flex justify-content-between text-light">
+                                    <div class="news-item-list-info__data">16:55 05 апреля 2018 </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#comments"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">26</span>
+                                    </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">65</span>
+                                    </div>
+                                </div>
                             </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/stalker.jpg');">
+
+                    <div class="col-sm-8 col-lg-4 mx-auto mx-lg-0 mt-4 mt-lg-0">
+                        <div class="news-item pt-4 pb-2 position-relative">
+                            <div class="news-item-list pt-0">
+                                <h3 class="news-item-list__name">World Cup СS 2018 Lisbon</h3>
+                                <p class="news-item-list__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                    totam rem aperiam eaque...</p>
+                                <div class="news-item-list-info d-flex justify-content-between text-light">
+                                    <div class="news-item-list-info__data">16:55 05 апреля 2018 </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#comments"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">26</span>
+                                    </div>
+                                    <div class="news-item-list-info-social">
+                                        <svg width="19" height="17">
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                        <span class="news-item-list-info-social__value">65</span>
+                                    </div>
+                                </div>
                             </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">STALKER 2</div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row mt-5">
@@ -441,13 +488,13 @@
                         </ul>
                     </div>
                 </div>
-
+            </div>
         </section>
 
-        <section id="recommended-product">
+        <section id="viewed-product">
             <div class="container">
                 <div class="col-12">
-                    <h2 class="section-title text-dark">РЕКОМЕНДУЕМЫЕ ТОВАРЫ</h2>
+                    <h2 class="section-title text-dark">рекомендуем вам</h2>
                 </div>
 
                 <div class="rest-product-slider position-relative">
@@ -545,23 +592,19 @@
                 </div>
 
                 <div class="prev-next-arrow-rest d-flex justify-content-between">
-                    <div class="rest-prev-arrow font-weight-bold">ПРЕД
-                        <svg width="35" height="25" class="ml-4 mr-3">
+                    <div class="rest-prev-arrow font-weight-bold text-white">ПРЕД
+                        <svg width="35" height="25" class="pl-2">
                             <use xlink:href="#slick-left-arrow"></use>
                         </svg>
                     </div>
-                    <div class="rest-next-arrow font-weight-bold">
-                        <svg width="35" height="25" class="mr-4">
+                    <div class="rest-next-arrow font-weight-bold text-white">
+                        <svg width="35" height="25" class="pr-2">
                             <use xlink:href="#slick-right-arrow"></use>
                         </svg>СЛЕД
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="character-img position-absolute">
-            <img src="images/content/reviews/page/Lara.png">
-        </div>
 
     </main>
 

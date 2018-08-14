@@ -3,12 +3,17 @@
     &__item {
         margin-right: 5px;
 
+        @media (max-width: map_get($grid-breakpoints, sm))  {
+            font-size: 14px;
+        }
+
         a {
-            color: #191919;
+            color: #fff; 
         }
 
         &::before {
             content: '/';
+            color: #fff;
             padding-right: 5px;
         }
 
@@ -17,6 +22,16 @@
             &::before {
                 content: '';
                 padding-right: 0;
+            }
+        }
+        &:last-of-type {
+            
+            a {
+                color: #191919;
+            }
+
+            &::before {
+                color: inherit;
             }
         }
     }

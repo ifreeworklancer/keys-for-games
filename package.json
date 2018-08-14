@@ -13,7 +13,9 @@
     "bootstrap": "^4.1.1",
     "flickity": "^2.1.2",
     "jquery": "^3.3.1",
+    "jquery-mousewheel": "^3.1.13",
     "laravel-mix": "^2.1.11",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.14.3",
     "slick-carousel": "^1.8.1"
   },

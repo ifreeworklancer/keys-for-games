@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reviews page</title>
+    <title>News item</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
@@ -38,6 +38,7 @@
             <path d="M23.745,26.048c-0.276,0-0.5-0.224-0.5-0.5v-7.25c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.25
                 C24.245,25.825,24.021,26.048,23.745,26.048z" fill="#4b4b4b"></path>
         </symbol>
+
         <symbol id="facebook" viewBox="0 0 612 612">
             <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
                 C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
@@ -45,6 +46,13 @@
             <path d="M317.739,482.617V306h58.279l9.208-58.529h-67.487v-29.348c0-15.272,5.007-29.849,26.928-29.849h43.813v-58.418h-62.201
                 c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z" fill="#4b4b4b"></path>
         </symbol>
+
+        <symbol id="close-modal" viewBox="0 0 31.112 31.112">
+            <polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97 
+	29.698,31.112 31.112,29.698 16.97,15.556 " fill="#929292" />
+        </symbol>
+
+
         <symbol id="google" viewBox="0 0 31.5 31.5">
             <style type="text/css">
                 .st0 {
@@ -91,6 +99,32 @@
             <circle class="st1" cx="17.3" cy="17.3" r="16.5"></circle>
         </symbol>
 
+        <symbol id="user-light" viewBox="0 0 34.5 34.5">
+            <style type="text/css">
+                .st10 {
+                    fill: #7e7e7e;
+                }
+
+                .st11 {
+                    fill: none;
+                    stroke: #7e7e7e;
+                    stroke-width: 1.5;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+            <path class="st10" d="M17.3,33.8c-3.4,0-6.7-1.1-9.5-3.1c-0.2-0.1-0.2-0.3-0.2-0.5s0.1-0.3,0.3-0.4c4.1-1.5,4.8-2.8,4.8-5.2
+                c0-0.6-0.1-0.8-0.4-1.2c-0.3-0.5-0.8-1.2-1.1-2.9c0-0.3-0.1-0.3-0.3-0.4c-0.6-0.3-1.2-0.7-1.3-2.6c0-0.9,0.3-1.4,0.6-1.7
+                c-0.1-0.3-0.2-0.9-0.2-1.5c-0.5-2.8-0.5-6.2,3.4-7.8c3.4-1.4,6.1-0.6,7,0.3c0.6,0,2.2,0.2,3.2,1.4c1.7,1.9,1.1,6.4,1,7.6
+                c0.3,0.3,0.6,0.8,0.6,1.7c-0.1,2-0.7,2.4-1.3,2.7c-0.2,0.1-0.3,0.1-0.3,0.4c-0.3,1.8-0.8,2.4-1.1,2.9c-0.3,0.4-0.4,0.6-0.4,1.2
+                c0,2.4,0.7,3.6,4.8,5.2c0.2,0.1,0.3,0.2,0.3,0.4s-0.1,0.4-0.2,0.5C24,32.7,20.7,33.8,17.3,33.8z M9.1,30.4c2.5,1.5,5.3,2.3,8.2,2.3
+                s5.7-0.8,8.2-2.3c-3.5-1.4-4.6-2.9-4.6-5.8c0-0.9,0.3-1.3,0.6-1.8c0.3-0.4,0.7-1,1-2.6c0.1-0.8,0.6-1,0.9-1.1
+                c0.3-0.1,0.6-0.3,0.7-1.8c0-0.8-0.3-1-0.4-1c-0.2-0.1-0.3-0.3-0.3-0.5c0.2-1.3,0.7-5.5-0.7-7c-0.9-1.1-2.4-1.1-2.6-1.1
+                c0,0-0.1,0-0.1,0c-0.1,0-0.4-0.1-0.4-0.3c-0.3-0.5-2.6-1.4-5.9-0.1c-3.2,1.3-3.2,4.1-2.8,6.7c0.1,1,0.3,1.8,0.3,1.8
+                c0,0.2-0.1,0.4-0.3,0.5l0,0c0,0-0.3,0.2-0.3,1c0.1,1.5,0.4,1.6,0.7,1.8c0.3,0.1,0.7,0.3,0.9,1.1c0.3,1.6,0.7,2.1,1,2.6
+                c0.3,0.4,0.6,0.8,0.6,1.8C13.6,27.5,12.5,29,9.1,30.4z"></path>
+            <circle class="st11" cx="17.3" cy="17.3" r="16.5"></circle>
+        </symbol>
+
         <symbol id="youtube" viewBox="0 0 31.5 31.5">
             <style type="text/css">
                 .st0 {
@@ -121,20 +155,17 @@
                 fill="#FFFFFF"></path>
         </symbol>
 
+
         <symbol id="comments" viewBox="0 0 60 60">
-            <path d="M10,25.465h13c0.553,0,1-0.448,1-1s-0.447-1-1-1H10c-0.553,0-1,0.448-1,1S9.447,25.465,10,25.465z" fill="#fff"></path>
-            <path d="M36,29.465H10c-0.553,0-1,0.448-1,1s0.447,1,1,1h26c0.553,0,1-0.448,1-1S36.553,29.465,36,29.465z" fill="#fff"></path>
-            <path d="M36,35.465H10c-0.553,0-1,0.448-1,1s0.447,1,1,1h26c0.553,0,1-0.448,1-1S36.553,35.465,36,35.465z" fill="#fff"></path>
-            <path d="M54.072,2.535L19.93,2.465c-3.27,0-5.93,2.66-5.93,5.93v5.124l-8.07,0.017c-3.27,0-5.93,2.66-5.93,5.93v21.141
-            c0,3.27,2.66,5.929,5.93,5.929H12v10c0,0.413,0.254,0.784,0.64,0.933c0.117,0.045,0.239,0.067,0.36,0.067
-            c0.276,0,0.547-0.115,0.74-0.327l9.704-10.675l16.626-0.068c3.27,0,5.93-2.66,5.93-5.929v-0.113l5.26,5.786
-            c0.193,0.212,0.464,0.327,0.74,0.327c0.121,0,0.243-0.022,0.36-0.067c0.386-0.149,0.64-0.52,0.64-0.933v-10h1.07
-            c3.27,0,5.93-2.66,5.93-5.929V8.465C60,5.196,57.341,2.536,54.072,2.535z M44,40.536c0,2.167-1.763,3.929-3.934,3.929l-17.07,0.07
-            c-0.28,0.001-0.548,0.12-0.736,0.327L14,53.949v-8.414c0-0.552-0.447-1-1-1H5.93c-2.167,0-3.93-1.763-3.93-3.929V19.465
-            c0-2.167,1.763-3.93,3.932-3.93l9.068-0.019c0,0,0,0,0,0c0.001,0,0.001,0,0.002,0l25.068-0.052c2.167,0,3.93,1.763,3.93,3.93
-            v18.441V40.536z M58,29.606c0,2.167-1.763,3.929-3.93,3.929H52c-0.553,0-1,0.448-1,1v8.414l-5-5.5V19.395
-            c0-3.27-2.66-5.93-5.932-5.93L16,13.514v-5.12c0-2.167,1.763-3.93,3.928-3.93l34.141,0.07c0.001,0,0.001,0,0.002,0
-            c2.167,0,3.93,1.763,3.93,3.93V29.606z" fill="#fff"></path>
+            <path d="M40.068,13.465L5.93,13.535c-3.27,0-5.93,2.66-5.93,5.93v21.141c0,3.27,2.66,5.929,5.93,5.929H12v10
+		c0,0.413,0.254,0.784,0.64,0.933c0.117,0.045,0.239,0.067,0.36,0.067c0.276,0,0.547-0.115,0.74-0.327l9.704-10.675l16.626-0.068
+		c3.27,0,5.93-2.66,5.93-5.929V19.395C46,16.125,43.34,13.465,40.068,13.465z M10,23.465h13c0.553,0,1,0.448,1,1s-0.447,1-1,1H10
+		c-0.553,0-1-0.448-1-1S9.447,23.465,10,23.465z M36,37.465H10c-0.553,0-1-0.448-1-1s0.447-1,1-1h26c0.553,0,1,0.448,1,1
+		S36.553,37.465,36,37.465z M36,31.465H10c-0.553,0-1-0.448-1-1s0.447-1,1-1h26c0.553,0,1,0.448,1,1S36.553,31.465,36,31.465z"
+            />
+            <path d="M54.072,2.535L19.93,2.465c-3.27,0-5.93,2.66-5.93,5.93v3.124l26.064-0.054c4.377,0,7.936,3.557,7.936,7.93v21.07v0.071
+		v2.087l3.26,3.586c0.193,0.212,0.464,0.327,0.74,0.327c0.121,0,0.243-0.022,0.36-0.067c0.386-0.149,0.64-0.52,0.64-0.933v-10h1.07
+		c3.27,0,5.93-2.66,5.93-5.929V8.465C60,5.195,57.34,2.535,54.072,2.535z" />
         </symbol>
 
         <symbol id="like" viewBox="0 0 155.123 155.123">
@@ -149,6 +180,43 @@
                 c-4.356,0-8.324-4.964-11.528-4.964H51.56V82.075c3.485-2.16,7.769-4.964,10.15-6.987c4.499-3.837,22.913-33.593,22.913-37.317
                 s-0.406-19.834-0.406-19.834s3.61-4.654,11.671-1.259c0,0,6.784,12.721,7.476,22.859c0,0-3.055,20.884-4.696,27.436h42.765
                 C151.94,66.985,149.935,81.986,140.09,83.531z"></path>
+        </symbol>
+
+        <symbol id="comments-dark" viewBox="0 0 60 60">
+            <path d="M40.068,13.465L5.93,13.535c-3.27,0-5.93,2.66-5.93,5.93v21.141c0,3.27,2.66,5.929,5.93,5.929H12v10
+                c0,0.413,0.254,0.784,0.64,0.933c0.117,0.045,0.239,0.067,0.36,0.067c0.276,0,0.547-0.115,0.74-0.327l9.704-10.675l16.626-0.068
+                c3.27,0,5.93-2.66,5.93-5.929V19.395C46,16.125,43.34,13.465,40.068,13.465z M10,23.465h13c0.553,0,1,0.448,1,1s-0.447,1-1,1H10
+                c-0.553,0-1-0.448-1-1S9.447,23.465,10,23.465z M36,37.465H10c-0.553,0-1-0.448-1-1s0.447-1,1-1h26c0.553,0,1,0.448,1,1
+                S36.553,37.465,36,37.465z M36,31.465H10c-0.553,0-1-0.448-1-1s0.447-1,1-1h26c0.553,0,1,0.448,1,1S36.553,31.465,36,31.465z"
+            />
+            <path d="M54.072,2.535L19.93,2.465c-3.27,0-5.93,2.66-5.93,5.93v3.124l26.064-0.054c4.377,0,7.936,3.557,7.936,7.93v21.07v0.071
+                v2.087l3.26,3.586c0.193,0.212,0.464,0.327,0.74,0.327c0.121,0,0.243-0.022,0.36-0.067c0.386-0.149,0.64-0.52,0.64-0.933v-10h1.07
+                c3.27,0,5.93-2.66,5.93-5.929V8.465C60,5.195,57.34,2.535,54.072,2.535z" />
+        </symbol>
+
+        <symbol id="like-dark" viewBox="0 0 456.814 456.814">
+
+            <path d="M441.11,252.677c10.468-11.99,15.704-26.169,15.704-42.54c0-14.846-5.432-27.692-16.259-38.547
+                c-10.849-10.854-23.695-16.278-38.541-16.278h-79.082c0.76-2.664,1.522-4.948,2.282-6.851c0.753-1.903,1.811-3.999,3.138-6.283
+                c1.328-2.285,2.283-3.999,2.852-5.139c3.425-6.468,6.047-11.801,7.857-15.985c1.807-4.192,3.606-9.9,5.42-17.133
+                c1.811-7.229,2.711-14.465,2.711-21.698c0-4.566-0.055-8.281-0.145-11.134c-0.089-2.855-0.574-7.139-1.423-12.85
+                c-0.862-5.708-2.006-10.467-3.43-14.272c-1.43-3.806-3.716-8.092-6.851-12.847c-3.142-4.764-6.947-8.613-11.424-11.565
+                c-4.476-2.95-10.184-5.424-17.131-7.421c-6.954-1.999-14.801-2.998-23.562-2.998c-4.948,0-9.227,1.809-12.847,5.426
+                c-3.806,3.806-7.047,8.564-9.709,14.272c-2.666,5.711-4.523,10.66-5.571,14.849c-1.047,4.187-2.238,9.994-3.565,17.415
+                c-1.719,7.998-2.998,13.752-3.86,17.273c-0.855,3.521-2.525,8.136-4.997,13.845c-2.477,5.713-5.424,10.278-8.851,13.706
+                c-6.28,6.28-15.891,17.701-28.837,34.259c-9.329,12.18-18.94,23.695-28.837,34.545c-9.899,10.852-17.131,16.466-21.698,16.847
+                c-4.755,0.38-8.848,2.331-12.275,5.854c-3.427,3.521-5.14,7.662-5.14,12.419v183.01c0,4.949,1.807,9.182,5.424,12.703
+                c3.615,3.525,7.898,5.38,12.847,5.571c6.661,0.191,21.698,4.374,45.111,12.566c14.654,4.941,26.12,8.706,34.4,11.272
+                c8.278,2.566,19.849,5.328,34.684,8.282c14.849,2.949,28.551,4.428,41.11,4.428h4.855h21.7h10.276
+                c25.321-0.38,44.061-7.806,56.247-22.268c11.036-13.135,15.697-30.361,13.99-51.679c7.422-7.042,12.565-15.984,15.416-26.836
+                c3.231-11.604,3.231-22.74,0-33.397c8.754-11.611,12.847-24.649,12.272-39.115C445.395,268.286,443.971,261.055,441.11,252.677z"
+            />
+            <path d="M100.5,191.864H18.276c-4.952,0-9.235,1.809-12.851,5.426C1.809,200.905,0,205.188,0,210.137v182.732
+                c0,4.942,1.809,9.227,5.426,12.847c3.619,3.611,7.902,5.421,12.851,5.421H100.5c4.948,0,9.229-1.81,12.847-5.421
+                c3.616-3.62,5.424-7.904,5.424-12.847V210.137c0-4.949-1.809-9.231-5.424-12.847C109.73,193.672,105.449,191.864,100.5,191.864z
+                 M67.665,369.308c-3.616,3.521-7.898,5.281-12.847,5.281c-5.14,0-9.471-1.76-12.99-5.281c-3.521-3.521-5.281-7.85-5.281-12.99
+                c0-4.948,1.759-9.232,5.281-12.847c3.52-3.617,7.85-5.428,12.99-5.428c4.949,0,9.231,1.811,12.847,5.428
+                c3.617,3.614,5.426,7.898,5.426,12.847C73.091,361.458,71.286,365.786,67.665,369.308z" />
         </symbol>
 
         <symbol id="more-info-arrow" viewBox="0 0 31.49 31.49">
@@ -166,6 +234,10 @@
         <symbol id="slick-right-arrow" viewBox="0 0 31.49 31.49">
             <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"
                 fill="#FE0809"></path>
+        </symbol>
+
+        <symbol id="filter-icon" viewBox="0 0 459 459">
+            <path d="M178.5,382.5h102v-51h-102V382.5z M0,76.5v51h459v-51H0z M76.5,255h306v-51h-306V255z" fill="#FFFFFF" />
         </symbol>
     </svg>
 
@@ -242,6 +314,9 @@
                             <a href="#" class="menu-list-link">события</a>
                         </li>
                         <li class="menu-list-item">
+                            <a href="#" class="menu-list-link">обзоры</a>
+                        </li>
+                        <li class="menu-list-item">
                             <a href="#" class="menu-list-link">новости</a>
                         </li>
                         <li class="menu-list-item">
@@ -276,292 +351,168 @@
         </div>
     </header>
 
-    <main id="reviews-page-main" class="position-relative">
+    <main id="news-item-main" class="position-relative">
 
-        <section id="filter">
-            <div class="container mb-0">
-                <ul class="filter-list d-flex list-unstyled justify-content-between flex-wrap flex-column flex-sm-row mb-0">
-                    <li class="filter-list__item d-flex align-items-center justify-content-center">
-                        <svg width="20" height="15" class="mr-2">
-                            <use xlink:href="#filter-icon"></use>
-                        </svg>
-                        <a href="#">Фильтр игр</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">экшн</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">аркада</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">симулятор</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">стратегия</a>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center align-items-center">
-                        <a href="#" class="text-uppercase">приключения</a>
-                    </li>
-                    <li class="filter-list__item filter-list__item--icon text-uppercase ml-auto mr-2 mx-sm-0">
-                        <div class="add-filter-icon d-flex justify-content-center align-items-center flex-column">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div>
-                    </li>
-                    <li class="filter-list__item d-flex d-sm-block justify-content-center">
-                        <a href="#">Cбросить фильтры</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="reviews-page">
-            <div class="reviews-page-banner position-absolute" style="background-image: url('images/bg/reviews-page-banner.jpg');"></div>
+        <section id="news-card">
+            <div class="news-item-banner position-absolute"></div>
             <div class="container">
 
-                <ul class="breadcrumb-list d-flex list-unstyled">
+                <ul class="breadcrumb-list d-flex list-unstyled mb-4 flex-wrap">
                     <li class="breadcrumb-list__item position-relative">
-                        <a href="#" class="text-uppercase text-white">главная</a>
+                        <a href="#" class="text-uppercase">главная</a>
                     </li>
                     <li class="breadcrumb-list__item position-relative">
-                        <a href="#" class="text-uppercase">обзоры</a>
+                        <a href="#" class="text-uppercase">новости</a>
+                    </li>
+                    <li class="breadcrumb-list__item position-relative">
+                        <a href="#" class="text-uppercase">страницы одной новости</a>
                     </li>
                 </ul>
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title text-white">обзоры</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="reviews-page-item reviews-page-item--big position-relative">
-                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold">ОБЗОР MORTAL KOMBAT X</div>
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/mortal_kombat_x.jpg')">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                        </div>
+                        <h2 class="section-title text-white mb-5">Чемпионат по DOTA в Токио закончился скандалом</h2>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/reviews-card.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-uppercase text-white font-weight-bold ml-3">GOD OF WAR</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/catalog/card/trailer-card.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">GOD OF WAR</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/reviews-1.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">Hellblade: Senua's Sacrifice</div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc.jpg');">
+                    <div class="col-12">
+                        <div class="news-item news-item--big position-relative">
+                            <div class="news-item__img position-absolute" style="background-image: url('images/content/news/news-2.jpg');"></div>
+                            <div class="news-item-list">
+                                <h3 class="news-item-list__name text-white">Чемпионат по DOTA в Токио закончился скандалом. Двоих участников удалили
+                                </h3>
                             </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/far-cry-5_dlc-2.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">FAR CRY 5</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="reviews-page-item position-relative">
-                            <div class="reviews-page-item__img position-absolute" style="background-image: url('images/content/reviews/page/stalker.jpg');">
-                            </div>
-                            <svg width="55" height="55" class="video-play-icon position-absolute">
-                                <use xlink:href="#multimedia-play"></use>
-                            </svg>
-                            <div class="reviews-page-item__title text-white font-weight-bold ml-3">STALKER 2</div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row mt-5">
-                    <div class="col-sm-7 d-flex justify-content-center justify-content-sm-between align-items-center flex-column flex-sm-row align-items-center">
-                        <div class="prev-next-arrow-pagination d-flex justify-content-between align-items-center mb-4 mb-sm-0">
-                            <div class="prev-arrow-pagination font-weight-bold text-dark text-uppercase d-flex justify-content-center align-items-center">
-                                <svg width="35" height="25" class="pr-2">
-                                    <use xlink:href="#slick-left-arrow"></use>
+                        <p class="news-item__desc">
+                            Портал HLTV.org обновил свой список лучших команд мира. Выход Tyloo в финал IEM Sydney позволил китайской команде подняться
+                            на 10-е место. На две позиции поднялись Gambit и Virtus.pro. Теперь команды занимают 18-е и 19-е
+                            место соответственно. Imperial, дошедшая до финала европейской квалификации StarSeries i-League
+                            Season 6, укрепила свои позиции в рейтинге и переместилась на 21-е место. Luminosity вернулась
+                            в топ-30 и теперь занимает 28-ю строчку.. North и G2 упали на 11-е и 12-е место соответственно.
+                            Cloud9 продолжила терять позиции в рейтинге. Сейчас команда находится на 20-й строчке. На три
+                            позиции опустились Space Soldiers. Теперь турецкая команда находится на 22-м месте.
+                        </p>
+
+                        <div class="add-comments d-flex flex-column flex-md-row justify-content-between align-items-center pb-2">
+                            <div class="news-item-list-info d-flex justify-content-between text-light">
+                                <div class="news-item-list-info__data">16:56 05 мая 2018 </div>
+                                <div class="news-item-list-info-social ml-4">
+                                    <svg width="19" height="17">
+                                        <use xlink:href="#comments-dark"></use>
+                                    </svg>
+                                    <span class="news-item-list-info-social__value">26</span>
+                                </div>
+                                <div class="news-item-list-info-social">
+                                    <svg width="19" height="17">
+                                        <use xlink:href="#like-dark"></use>
+                                    </svg>
+                                    <span class="news-item-list-info-social__value">65</span>
+                                </div>
+                            </div>
+                            <button href="#" id="btn-comments" class="btn btn-dark text-white text-uppercase font-weight-bold py-3 px-4 mt-4 mt-md-0">оставить комментарий</button>
+                        </div>
+
+                        <h4 class="comments-reviews-title font-weight-bold mt-4">Комментарии</h4>
+
+                        <div class="comments-reviews mt-4">
+
+                            <div class="comments-reviews-item d-flex">
+                                <svg width="75" height="75">
+                                    <use xlink:href="#user-light"></use>
                                 </svg>
-                                <span class="arrow-text">ПРЕД</span>
+                                <div class="comments-content">
+                                    <div class="comments-content-info d-flex justify-content-between flex-column flex-md-row">
+                                        <div class="user-name text-uppercase">andrew</div>
+                                        <div class="info-data">16:57 05 мая 2018</div>
+                                    </div>
+                                    <p class="comments-content__text">
+                                        Выход Tyloo в финал IEM Sydney позволил китайской команде подняться на 10-е место. На две позиции поднялись Gambit и Virtus.pro.
+                                        Теперь команды занимают 18-е и 19-е место соответственно. Imperial, дошедшая до финала
+                                    </p>
+                                </div>
                             </div>
-                            <div class="next-arrow-pagination font-weight-bold text-dark text-uppercase d-flex justify-content-center align-items-center">
-                                <span class="arrow-text">СЛЕД</span>
-                                <svg width="35" height="25" class="pl-2">
-                                    <use xlink:href="#slick-right-arrow"></use>
+                            <div class="comments-reviews-item d-flex">
+                                <svg width="75" height="75">
+                                    <use xlink:href="#user-light"></use>
                                 </svg>
+                                <div class="comments-content">
+                                    <div class="comments-content-info d-flex justify-content-between flex-column flex-md-row">
+                                        <div class="user-name text-uppercase">valerka-killer</div>
+                                        <div class="info-data">16:56 05 мая 2018</div>
+                                    </div>
+                                    <p class="comments-content__text">
+                                        Luminosity вернулась в топ-30 и теперь занимает 28-ю строчку.. North и G2 упали на 11-е и 12-е место соответственно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comments-reviews-item d-flex">
+                                <svg width="75" height="75">
+                                    <use xlink:href="#user-light"></use>
+                                </svg>
+                                <div class="comments-content">
+                                    <div class="comments-content-info d-flex justify-content-between flex-column flex-md-row">
+                                        <div class="user-name text-uppercase">andrew</div>
+                                        <div class="info-data">16:57 05 мая 2018</div>
+                                    </div>
+                                    <p class="comments-content__text">
+                                        Luminosity вернулась в топ-30 и теперь занимает 28-ю строчку.. North и G2 упали на 11-е и 12-е место соответственно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comments-reviews-item d-flex">
+                                <svg width="75" height="75">
+                                    <use xlink:href="#user-light"></use>
+                                </svg>
+                                <div class="comments-content">
+                                    <div class="comments-content-info d-flex justify-content-between flex-column flex-md-row">
+                                        <div class="user-name text-uppercase">valerka-killer</div>
+                                        <div class="info-data">16:58 05 мая 2018</div>
+                                    </div>
+                                    <p class="comments-content__text">
+                                        Luminosity вернулась в топ-30 и теперь занимает 28-ю строчку.. North и G2 упали на 11-е и 12-е место соответственно.Luminosity
+                                        вернулась в топ-30 и теперь занимает 28-ю строчку.. North и G2 упали на 11-е и 12-е
+                                        место соответственно.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <ul class="pagination-list d-flex list-unstyled m-0">
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">01</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">02</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">...</a>
-                            </li>
-                            <li class="list-item d-flex justify-content-center align-items-center font-weight-bold">
-                                <a href="#">99</a>
-                            </li>
-                        </ul>
+                        <div id="add-comments-modal" class="position-relative">
+                            <div class="comments-modal-header d-flex justify-content-between align-items-start flex-column flex-lg-row">
+                                <h4 class="comments-modal-header__title text-white text-uppercase bg-dark">оставить комментарий</h4>
+                                <div class="user-block d-flex align-items-center">
+                                    <div class="user-block__avatar" style="background-image: url('images/content/comments/comments-2.png');"></div>
+                                    <div class="user-block__name text-uppercase">Александр</div>
+                                </div>
+                                <a href="#" class="close-modal-block">
+                                    <svg width="35" height="35">
+                                        <use xlink:href="#close-modal"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="comments-modal-body">
+                                <form id="form-comments">
+                                    <div class="form-group ml-3 mr-3 position-relative">
+                                        <label for="user-comments-text" class="label-placeholder text-uppercase">Ваше сообщение</label>
+                                        <textarea class="form-control" id="user-comments-text" rows="3"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="conditions">
+                                            <label class="form-check-label" for="conditions">Соглашаюсь с уcловиями пользования сайта и правилами модерации. За мат бан!</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark text-white text-uppercase font-weight-bold">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
         </section>
-
-        <section id="recommended-product">
-            <div class="container">
-                <div class="col-12">
-                    <h2 class="section-title text-dark">РЕКОМЕНДУЕМЫЕ ТОВАРЫ</h2>
-                </div>
-
-                <div class="rest-product-slider position-relative">
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/warcraft.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/crew-2.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                    <div class="rest-item">
-                        <div class="catalog-item position-relative">
-                            <a href="#" class="catalog-item-img d-block position-absolute" style="background-image: url('images/content/catalog/mortal_kombat.jpg');">
-                                <a>
-                                    <div class="catalog-item-info position-relative mx-3 pb-2">
-                                        <div class="d-flex justify-content-between genre text-light">Аркада
-                                            <del class="old-value">1500грн</del>
-                                        </div>
-                                        <div class="d-flex justify-content-between game-name text-uppercase font-weight-bold">CREW 2
-                                            <span class="value text-lowercase text-danger">999грн</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="prev-next-arrow-rest d-flex justify-content-between">
-                    <div class="rest-prev-arrow font-weight-bold">ПРЕД
-                        <svg width="35" height="25" class="ml-4 mr-3">
-                            <use xlink:href="#slick-left-arrow"></use>
-                        </svg>
-                    </div>
-                    <div class="rest-next-arrow font-weight-bold">
-                        <svg width="35" height="25" class="mr-4">
-                            <use xlink:href="#slick-right-arrow"></use>
-                        </svg>СЛЕД
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="character-img position-absolute">
-            <img src="images/content/reviews/page/Lara.png">
-        </div>
 
     </main>
 

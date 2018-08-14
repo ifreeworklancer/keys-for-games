@@ -9,6 +9,7 @@
 @import "base/body";
 @import "base/section";
 @import "base/btn";
+@import "base/scrollbar";
 
 
 @import "modules/logo";
@@ -21,6 +22,9 @@
 @import "modules/breadcrumb";
 @import "modules/pagination";
 @import "modules/recommended-product";
+@import "modules/video-play-icon";
+@import "modules/forms";
+@import "modules/basket";
 
 
 @import "layout/app-header";
@@ -34,6 +38,9 @@
 @import "layout/app-footer";
 
 @import "layout/page-catalog";
-@import "layout/card-catalog";
+@import "layout/item-catalog";
 @import "layout/page-reviews";
+@import "layout/page-news";
+@import "layout/item-news";
+@import "layout/page-about";
 

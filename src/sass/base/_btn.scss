@@ -7,6 +7,10 @@
     z-index: 9;
     transition: linear .3s;
 
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+       padding: 20px 40px !important;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -24,4 +28,9 @@
             right: 0;
         }
     }
+}
+
+.btn-dark {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
 }

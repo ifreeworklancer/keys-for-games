@@ -1,15 +1,5 @@
 #comments {
-    padding: 60px 0 230px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 385px;
-        background: url('../images/bg/news-bg.jpg') 50% 50% /cover no-repeat;
-    }
+    padding: 60px 0 0;
 }
 
 .comments-item {
@@ -35,3 +25,4 @@
         color: #555353;
     }
 }
+

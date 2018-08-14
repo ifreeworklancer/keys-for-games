@@ -1,4 +1,4 @@
-#catalog-card-main {
+#catalog-item-main {
 
     &::before {
         content: '';
@@ -12,7 +12,7 @@
 }
 
 #catalog-card {
-    background: url('../images/bg/catalog-card-bg.jpg') 50% 50% /cover no-repeat;
+    background: url('../images/bg/catalog-item-bg.jpg') 50% 50% /cover no-repeat;
 
     .container {
         padding-top: 45px;
@@ -24,6 +24,17 @@
 
     .breadcrumb-list {
         margin-bottom: 50px;
+
+        &__item {
+
+            a {
+                color: $dark;
+            }
+
+            &::before {
+                color: inherit;
+            }
+        }
     }
 
     .card-img {
