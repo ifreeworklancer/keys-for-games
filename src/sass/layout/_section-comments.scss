@@ -1,5 +1,15 @@
 #comments {
-    padding: 60px 0 0;
+    padding: 60px 0 285px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        padding-bottom: 385px;
+        bottom: 0;
+        background: url('../images/bg/news-bg.jpg') 50% 50% /cover no-repeat;
+        z-index: -9999;
+    }
 }
 
 .comments-item {

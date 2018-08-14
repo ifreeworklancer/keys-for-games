@@ -214,8 +214,3 @@ if (elem4) {
     flkty4.previous(true, false);
   });
 }
-
-
-/**
- * Smoke
- */

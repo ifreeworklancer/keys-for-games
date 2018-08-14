@@ -13262,10 +13262,6 @@ if (elem4) {
   });
 }
 
-/**
- * Smoke
- */
-
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
