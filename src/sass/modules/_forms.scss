@@ -67,6 +67,9 @@ input[type="checkbox"]:checked + .form-check-label::before {
     background-size: 100%;
 }
 
-.btn {
-    padding: 30px 100px;
+#form-comments {
+    
+    .btn {
+        padding: 30px 100px;
+    }
 }

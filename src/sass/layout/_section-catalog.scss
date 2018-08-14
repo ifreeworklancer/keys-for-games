@@ -32,6 +32,10 @@
         line-height: .35;
         color: $dark;
     }
+
+    .input__field--makiko:focus {
+        border-color: transparent;
+    }
 }
 
 .catalog-item {

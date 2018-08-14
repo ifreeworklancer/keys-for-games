@@ -13,4 +13,13 @@
         padding: 25px 0 20px;
         border-top: 1px solid $secondary;
     }
+
+    svg {
+        opacity: .6;
+        transition: .5s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }

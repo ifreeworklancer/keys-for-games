@@ -3,10 +3,8 @@ import Flickity from 'flickity';
 import 'jquery-mousewheel';
 import 'malihu-custom-scrollbar-plugin';
 import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
-// import lodash from 'lodash';
 
 window.jQuery = window.$ = jquery;
-// window._ = lodash;
 
 import 'flickity/dist/flickity.css';
 
@@ -24,6 +22,7 @@ import 'flickity/dist/flickity.css';
       menu.slideDown();
     }
   });
+
 
   /**
    * Form-label

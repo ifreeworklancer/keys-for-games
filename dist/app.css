@@ -10445,7 +10445,8 @@ section {
 
 .prev-next-arrow-pagination {
   width: 100%;
-  max-width: 240px;
+  max-width: 210px;
+  margin-right: 20px;
 }
 
 .prev-next-arrow-pagination .prev-arrow-pagination, .prev-next-arrow-pagination .next-arrow-pagination {
@@ -10630,7 +10631,7 @@ input[type="checkbox"]:checked + .form-check-label::before {
   background-size: 100%;
 }
 
-.btn {
+#form-comments .btn {
   padding: 30px 100px;
 }
 
@@ -10880,13 +10881,23 @@ input[type="checkbox"]:checked + .form-check-label::before {
 }
 
 #app-header {
-  padding: 40px 0;
+  padding: 35px 0;
   z-index: 10;
   background-image: linear-gradient(132deg, #0c0c0c 6%, #0a0a0a 78%, #080808 99%);
 }
 
 #app-header .container-fluid {
   max-width: 1400px;
+}
+
+#app-header svg {
+  opacity: .6;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#app-header svg:hover {
+  opacity: 1;
 }
 
 #header-banner {
@@ -11119,6 +11130,10 @@ input[type="checkbox"]:checked + .form-check-label::before {
   color: #181818;
 }
 
+.catalog-form-search .input__field--makiko:focus {
+  border-color: transparent;
+}
+
 .catalog-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11201,7 +11216,7 @@ input[type="checkbox"]:checked + .form-check-label::before {
 
 #between {
   position: relative;
-  top: -120px;
+  top: -160px;
   min-height: 550px;
   background: url("../images/bg/between-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -11401,7 +11416,7 @@ input[type="checkbox"]:checked + .form-check-label::before {
 }
 
 #comments {
-  padding: 60px 0 285px;
+  padding-bottom: 230px;
 }
 
 #comments::before {
@@ -11452,6 +11467,16 @@ input[type="checkbox"]:checked + .form-check-label::before {
 #app-footer .copyr {
   padding: 25px 0 20px;
   border-top: 1px solid #4b4b4b;
+}
+
+#app-footer svg {
+  opacity: .6;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#app-footer svg:hover {
+  opacity: 1;
 }
 
 #catalog-page-main .character-img {
@@ -11746,7 +11771,7 @@ input[type="checkbox"]:checked + .form-check-label::before {
 .reviews-page-item {
   padding-top: 145px;
   padding-bottom: 20px;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .reviews-page-item__img {
@@ -11970,7 +11995,7 @@ input[type="checkbox"]:checked + .form-check-label::before {
 }
 
 #news-item-main {
-  padding-bottom: 520px;
+  padding-bottom: 420px;
 }
 
 #news-item-main::before {
